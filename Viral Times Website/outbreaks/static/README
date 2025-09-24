@@ -1,0 +1,8 @@
+# Static Files
+
+This folder contains the static assets for the Viral Times project.  
+Static files include CSS for styling and images used across the site.
+
+## Contents
+- **images/** – Image assets used in templates (site graphics, icons, etc.)
+- **style.css** – Main stylesheet for layout, colors, and responsive design
