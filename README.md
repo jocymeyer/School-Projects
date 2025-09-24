@@ -10,21 +10,21 @@ Each project demonstrates different skills — from static multi-page websites t
 
 ## Projects
 
-### [ThreadTrends](./threadtrends/)
+### [ThreadTrends Website](./ThreadTrends%20Website/)
 A long-form responsive website that I researched, designed, and implemented.  
 - **Stack:** HTML, CSS, JavaScript  
 - **Highlights:** Multi-page design, responsive layouts with Flexbox/Grid, accessible navigation, custom JavaScript interactivity  
 
 ---
 
-### [Wild Rescues](./rescue-site/)
+### [Wild Rescues Website](./Wild%20Rescues%20Website/)
 A nonprofit-themed responsive website I designed and implemented, following professional web design practices.  
 - **Stack:** HTML, CSS, JavaScript  
 - **Highlights:** Multi-page design (`Home`, `About`, `Partnership`, `Gallery`, `FAQs`, `Contact`), FAQ interactivity, media-rich pages, mobile-first CSS with responsive breakpoints  
 
 ---
 
-### [Viral Times](./viral-times/)
+### [Viral Times Website](./Viral%20Times%20Website/)
 A Django-based educational website I designed and built. It presents information on historic and modern infectious disease outbreaks.  
 - **Stack:** Python, Django, HTML, CSS  
 - **Highlights:** Data models for outbreaks and reports, dynamic list/detail pages, organized templates and static files, migrations to track schema changes, admin integration for content management  
