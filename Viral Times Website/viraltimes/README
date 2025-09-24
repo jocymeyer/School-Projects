@@ -1,0 +1,14 @@
+# Viraltimes Project Core
+
+This folder contains the **core configuration** for the Viral Times Django project.  
+It defines how the entire project is set up and how all apps (such as the Outbreaks app) are connected.
+
+## Contents
+- **settings.py** – Global configuration for the project (installed apps, middleware, database, static files, etc.)
+- **urls.py** – Root URL routing that connects requests to app-specific URL patterns
+- **wsgi.py** – WSGI entry point for deployment on traditional servers
+- **asgi.py** – ASGI entry point for asynchronous deployment (e.g., WebSockets, async workers)
+- **__init__.py** – Marks this directory as a Python package
+- **__pycache__/** – Auto-generated files (ignored in Git)
+
+This folder serves as the **control center** of the Viral Times project, coordinating all apps and settings.
