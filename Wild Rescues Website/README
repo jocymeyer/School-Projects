@@ -1,0 +1,25 @@
+# Wild Rescues Website
+
+**Role:** Designer & Developer  
+**Stack:** HTML5, CSS3, JavaScript  
+
+Wild Rescues is a multi-page responsive website I designed and implemented as part of my web design coursework.  
+It follows a non-profit theme for a wildlife rescue and rehabilitation center, with structured navigation, multimedia integration, and a consistent design system.
+
+## Features
+- Multi-page responsive design (`Home`, `About`, `Partnership`, `Gallery`, `FAQs`, `Contact`)
+- Mobile-first navigation with hamburger menu
+- FAQ interactivity powered by JavaScript
+- Gallery with accessible image/figure markup
+- Media-rich pages with video, tables, and forms
+- CSS media queries for tablet, desktop, and large screen layouts
+
+## Project Structure
+rescue-site/
+├─ *.html # Main site pages
+├─ css/ # Stylesheets
+├─ scripts/ # JavaScript (hamburger menu, FAQ logic)
+└─ images/ # Assets
+
+## Quick Start
+Clone the repo and open `index.html` in your browser.
