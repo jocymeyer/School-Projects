@@ -1,0 +1,798 @@
+/*
+Author: Jocelyn Meyer
+Date: 3/5/2025
+File name: styles.css
+*/
+
+/*CSS Reset*/
+
+body, header, nav, main, img, footer, h1, h3, ul, aside, figure, figcaption, section,
+article, aside {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*Style rules for body and images */
+body {
+	background-color: #6f7f7e;
+	color: #3E2723; 
+}
+
+#wrapper {
+	background-color: #8fa6a8; 
+	width: auto;
+	margin: 20px 1.5vw;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Hamburger styling */
+.mobile-nav a {
+    color: #adc4c6;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.nav-icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    color: #6f7f7e; 
+    padding: 2%;
+	width: 100%;
+	z-index: 999;
+}
+
+#menu-toggle.nav-icon {
+	font-size: 2em;
+	text-align: right;
+	padding: 2% 7% 0 0;
+}
+
+.mobile-nav-links {
+	display: none;
+}
+
+/* When the mobile nav has the active class, display the nav links */
+.mobile-nav.active .mobile-nav-links {
+    display: block;
+}
+
+.mobile-nav li {
+	border: 2px solid #a5b4af;
+	border-top: none;
+}
+
+.mobile-nav li:first-child {
+	border-top: 2px solid #a5b4af;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Figure and figure caption styling */
+figurecaption {
+	font-size: 1em;
+	color: #594a34;
+	font-style: italic;
+	text-align: center;
+	padding-top: 5px;
+}
+
+/* Article Styling */
+article {
+	padding: 2%;
+	background-color: rgba(204, 204, 204, 0.3);
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+
+article h3 {
+	text-align: center;
+	font-size: 1.5em;
+	font-family: 'Lora', serif;
+	color: #3E2723;
+}
+
+article p {
+	font-size: 1.25em;
+	text-align: justify;
+	line-height: 1.6;
+}
+
+/* Grid layout for articles */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+	padding: 20px;
+}
+
+.frame {
+	aspect-ratio: 4/3;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	margin: auto;
+	text-align: center;
+}
+
+.frame:hover {
+	transform: translateY(-10px) translateX(10px);
+	box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
+	font-style: italic;
+}
+
+.frame img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.article-item {
+	margin: 3% 0 4% 1%;
+}
+
+.pic-text {
+	position: absolute;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.6);
+	color: #a5b4af;
+	width: 100%;
+	padding: 15px;
+	text-align: center;
+	font-family: 'Lora', serif;
+	font-size: 2em;
+	font-weight: bold;
+	border-radius: 0 0 10px 10px;
+}
+
+.grid-item {
+	background-color: #f3e6d8;
+	padding: 15px;
+	border-radius: 8px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* styling for Fashion Trend Containers */
+.fashion-trend-container { /* fashion-trend main area */
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0;
+	margin-top: 10px;
+	background-color: #8fa6a8; /* area around the images and text */
+	padding: 15px;
+	border-radius: 8px;
+	border-top: 3px dashed #594a34;
+	border-bottom: 3px dashed #594a34;
+}
+
+.image-box {
+	padding: 0;
+	border-radius: 8px;
+}
+
+.fashion-trend-text { /* fashion-trend text area, not article links or images*/
+	width: 60%;
+	color: #3E2723; /* text color */
+}
+
+.fashion-link { /* fashion-trend article link area */
+	display: inline-block;		
+	color: #3E2723; /* fashion-trends link color */
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+.fashion-link:hover {
+	color: #594a34; /* fashion-trends link hover color */
+	font-style: italic;
+	transform: translateY(-5px) translateX(5px);
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* left side image */
+.small-image {
+	max-width: 40%;
+	height: auto;
+	border-radius: 8px;
+}
+ .article-container {
+  margin-bottom: 20px; /* Space between articles */
+}
+
+/* Meta Tab Styling */
+.meta-tab {
+  margin-top: 10px;
+  font-size: 1.25em;
+  color: #3E2723;
+  padding: 1% 0 0 1%;
+}
+
+.meta-tab summary {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #a5b4af;
+  display: inline-block;
+  background-color: #adc4c6; /* 6f7f7e; */ 
+}
+
+.meta-tab summary:hover {
+  transform: translateY(-5px) translateX(5px);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  font-style: italic;
+  color: #594a34;
+}
+
+.meta-tab p {
+  margin: 1% 0 0 0;
+  padding: 0 10px;
+}
+
+/* Style rules for form elements */
+
+fieldset legend {
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+fieldset.inquiry-details {
+	border: 1px solid #a5b4af; /* consistent with your design */
+	padding: 1.5rem;
+	margin-bottom: 2rem;
+	border-radius: 6px;
+	background-color: #fafafa;
+}
+
+/* For each set of radio + label */
+.inquiry-details .radio-option {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.5rem;
+}
+
+.inquiry-details .radio-option input[type="radio"] {
+	margin-right: 0.5rem;
+}
+
+.label {
+	text-align: left;
+	display: block;
+	padding-top: 2%;
+}
+
+fieldset, input, textarea {
+	margin-bottom: 2%;
+}
+
+fieldset legend {
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+label {
+	display: block;
+	padding-top: 2%;
+}
+
+form #submit {
+	margin: 0 auto;
+	display: block;
+	padding: 2%;
+	background-color: #6f7f7e;
+	color: #f6eee4;
+	font-size: 1.25em;
+	border-radius: 10px;
+}
+
+/* Style rules for main content for all viewports */
+main { /* not nav, footer, or fashion-trends*/
+	font-family: 'Lora', serif;
+	clear: left;
+	padding: 0.5% 2%; /* space around text */
+	font-size: 1.25em;
+	color: #3E2723; /* main text area text default*/
+}
+
+main p {
+	font-size: 1.25em;
+}
+
+main h1 {
+	text-align: center;
+	padding: 0 0 0.5% 0;
+}
+
+main h3 {
+	padding-top: 2%;
+}
+
+main ul {
+	list-style-type: square;
+	margin: 0 0 0 2.25%;
+}
+
+main li {
+	font-size: 1.1em;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+h2:last-of-type {
+	margin-bottom: 2%;
+}
+
+body, p, a, nav li {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+}
+
+.link {
+	color: #3E2723; /* link class text color */
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.link:hover {
+	color: #7e969a; /* link class text color when hovered over */
+	text-decoration: underline;
+}
+
+#info {
+	margin-left: 10%
+}
+
+#contact {
+	text-align: center;
+}
+
+#questions p {
+	cursor: pointer;
+}
+
+#answer {
+	text-align: center;
+	font-weight: bold;
+	width: 80%;
+	margin: 0 auto;
+}
+
+#answer h2 {
+	display: none;
+}
+
+/*Style rules for footer content for all viewports (mobile, desktop, large desktop)*/ 
+footer {
+    text-align: center; 
+    font-size: 1em; /* font size for footer and anchor element */
+    background-color: #3E2723; /* footer bottom bar color */
+    color: #f6eee4; /* text color for non-anchor elements */
+    padding: 1% 0; /* space around text in footer */
+    margin-top: auto; /* space between footer and main text area */
+}
+
+footer a { /* footer anchor element */
+	color: #f3e6d8; /* footer anchor elements text color */
+	text-decoration: none; 
+}
+
+footer a:hover {
+	color: #8fa6a8; /* footer text color when hovered over all viewports */
+}
+
+/* header styles */
+header {
+	width: 100%;
+	text-align: center;
+}
+
+.header-image {
+	width: 100%;
+	height: 10vh;
+	object-fit: cover;
+}
+
+/* Fashion Trend Archive link formatting style */
+	.fashion-trend-text-archive {
+		padding: 2% 0 0 3.4%;
+		margin: 0;
+	}
+	
+	.fashion-trend-text-archive p {
+		font-size: 1.25em; 
+		color: #594a34; 
+		font-family: 'Lora', serif; 
+		font-weight: 400; 
+		text-align: left;
+		margin-top: 1%;
+	}
+	
+	.fashion-trend-archive a, .fashion-archive-link {
+		font-family: 'Emblema One', serif;
+		text-decoration: none;
+		font-size: 1.25em;
+		color: #3b4a49;
+	}
+	
+	.fashion-trend-archive a:hover, .fashion-archive-link:hover {
+		color: #594a34;
+		text-decoration: underline;
+		font-style: italic;
+	}
+		
+	.fashion-trend-text-archive-link {
+		padding: 0; 
+		margin: 2% 1% 2% 1%;
+	}
+	
+	.fashion-trend-text-archive-link h2 {
+		margin: 0 0 4vw 0; 
+	}
+	
+/* Mobile Style rules */
+.mobile {
+	display: block;
+}
+
+.mobile h1 {
+	font-family: "Emblema One", serif;
+	font-weight: 500;
+	font-style: normal;
+	text-align: center;
+	padding: 2%;
+}
+
+.mobile h3 {
+	font-family: "Lora", serif;
+	font-weight: 400;
+	font-style: normal;
+	text-align: center;
+	padding: 2%;
+}
+
+.mobile h1, .mobile h3 {
+	padding: 2%;
+	text-align: center;
+}
+
+.tab-desk, .desk {
+	display: none;
+}
+
+.fashion-trend-container h1 {
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+/* Media Query for Mobile Viewport */
+@media screen and (max-width: 619px) {
+	/* Mobile Viewport: Show mobile class, hide tab-desk class */
+	#wrapper {
+		width: auto;
+		margin: 1% 2.5% 2.5% 2.5%;
+		padding: 0;
+	}
+	
+	article {
+		padding: 2%;
+	}
+	
+	article h3 {
+		font-size: 1.25em;
+	}
+	
+	article p {
+		font-size: 1.1em;
+	}
+	
+	.grid {
+		grid-template-columns: 1fr;
+	}
+	
+	.pic-text {
+		font-size: 1em;
+	}
+	
+	.fashion-trend-container {
+		flex-direction: column;
+		align-items: center;
+		padding: 2%;
+	}
+	
+	.small-image, .fashion-trend-text {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		margin-top: 0;
+		border-radius: 0;
+	}
+	
+	.mobile {
+		display: block;
+	}
+	
+	.tab-desk, .desk {
+		display: none;
+	}
+	
+	main {
+		font-size: 1.1em;
+		padding: 1% 4%;
+	}
+	
+	.fashion-link {
+		font-size: 1.5em;
+	}
+	
+	.intro {
+		margin-top: 2%;
+	}
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px), print {
+	/* Tablet Viewport: Show tab-desk class, hide mobile class */
+	.tab-desk, .mobile-nav {
+		display: block;
+	}
+	
+	.mobile, .desk {
+		display: none;
+	}
+	
+	.text-wrapper {
+		border: 3px solid #6f7f7e;
+		margin: 10px 0;
+		border-radius: 8px;
+		padding: 10px 20px 0 20px;
+	}
+	
+	.fashion-trend-container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	
+	.fashion-trend-text {
+		padding: 10px;
+		text-align: left;
+	}
+	
+    .image-box {
+		width: 80%;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.small-image {
+		max-width: 100%;
+		height: auto;
+		border-radius: 8px;
+	}
+	
+	.fashion-trend-text-archive p {
+		margin-top: 0;
+		font-size: 1.5em;
+	}
+	
+	.fashion-trend-text-archive-link h2 {
+		margin: 1% 0; 
+	}
+	
+	article {
+		padding: 2%;
+	}
+	
+	article h3 {
+		font-size: 1.5em;
+	}
+	
+	article p {
+		font-size: 1.25em;
+	}
+	
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+	}	
+	
+	.intro p {
+		text-align: center;
+	}
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px), print {
+    /* Desktop Viewport: Style rules for nav area */
+	.mobile-nav {
+		display: none;
+	}
+	
+	.desk {
+		display: block;
+	}
+	
+	header {
+		padding-bottom: 10px;
+	}
+	
+	article {
+		padding: 2%;
+	}
+	
+	article h3 {
+		font-size: 1.75em;
+	}
+	
+	article p {
+		font-size: 1.4em;
+	}
+	
+	.grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	
+    .fashion-trend-container {
+        grid-template-columns: repeat(2, 1fr);
+		display: flex;
+		justify-content: center;
+    }
+
+    .small-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .fashion-trend-text {
+        flex-grow: 1;
+        max-width: none; 
+        display: flex;
+        align-items: center;
+        height: auto;
+        padding: 20px; 
+		margin: 0 0 0 20px;
+        text-align: left;
+        width: 100%;
+    }
+	
+	.fashion-link {
+		font-size: 2.8vw;
+	}
+	
+	.header-image {
+		width: 100%;
+		height: 18vh;
+		object-fit: cover;
+	}
+	
+	.article-item {
+		width: 90%;
+		align-items: center;
+		font-size: 0.7em;
+		margin: 3% 0 1% 1%;
+	}
+	
+	.fashion-trend-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+		justify-items: center;  
+		margin-bottom: 0;
+	}
+	
+	nav {
+	background-color: #6f7f7e; /* nav background area color, all viewports */
+	padding: 10px 0; /* space around text */
+	text-align: center;
+}
+
+	nav ul {
+		padding: 0;
+		margin: 0;
+	}
+
+	nav li {
+		display: inline-block;
+		font-size: 1.5em;
+		font-family: Geneva, Arial, sans-serif;
+		font-weight: bold;
+		border: 2px solid #a5b4af;
+		border-radius: 8px;
+		margin: 0.1em 0.8em;		
+	}
+
+	nav li a {
+		display: block;
+		color: #BCCBCD; /* nav 'button' (bars on mobile) text color not hovered over */
+		padding: 0.5em 1.5em;
+		text-decoration: none;
+		background-color: #6f7f7e; /* color of nav 'button'; bars on mobile */
+		border-radius: 8px;
+	}
+
+	nav li a:hover{
+		color: #3E2723; /* text color of the hover 'button' when hovered, */
+		background-color: #8fa6a8; /* desktop background of hover 'button' when hovered */
+		border: solid 2px #3E2723;
+		border-radius: 8px;
+		transform: scale(1.3); /* add */
+	}
+	
+	/* Desktop Viewport: Style rules for main area */
+	#info ul {
+		margin-left: 10%;
+	}
+	
+	.meta-tab {
+	  margin-top: 10px;
+	}
+	
+	.meta-tab summary {
+		font-size: 1.25em;
+	}
+	
+	.meta-tab p {
+		font-size: 1.1em;
+	}
+}
+
+/* Media Query for Large Desktop Viewport */
+@media screen and (min-width: 1921px) {
+	.fashion-trend-container {
+		width: 90%;         
+		margin: 30px auto;  
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		gap: 20px;
+	  }
+	  
+	  .small-image {
+		width: 35%;
+	  }
+	  
+	  .fashion-trend-text {
+		width: 65%;
+	  }
+	  
+	  .header-image {
+		width: 100%;
+		height: 25vh;
+		object-fit: cover;
+	}
+	
+	body {
+		background: linear-gradient(to bottom, #6f7f7e, #3E2723); /* large desktop outside main text area gradient */
+	}
+	#wrapper {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+	main {
+		background-color: #8fa6a8; /* large desktop background color of main text area */
+	}
+}
+
+@media print {
+	body {
+		background-color: white;
+		color: black;
+	}
+}
