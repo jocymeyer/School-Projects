@@ -1,0 +1,14 @@
+# Outbreaks Migrations
+
+This folder contains Django migration files for the **Outbreaks app**.  
+Migrations track changes to the database schema over time as models evolve.
+
+## Contents
+- **0001_initial.py** – Initial schema for outbreaks
+- **0002_report.py** – Added the report model
+- **0003_report_link.py** – Introduced link between outbreaks and reports
+- **0004_outbreak_file_name.py** – Updated outbreak model with file name field
+- **__init__.py** – Marks this directory as a Python package
+- **__pycache__/** – Auto-generated cache files (ignored in Git)
+
+These files allow Django to apply, roll back, and synchronize database changes consistently.
