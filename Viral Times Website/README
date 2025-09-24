@@ -1,0 +1,55 @@
+# Viral Times
+
+**Role:** Designer & Developer  
+**Stack:** Python, Django, HTML5, CSS3  
+**Date:** 5/9/2025
+
+Viral Times is a Django-based educational website I designed and implemented.  
+It presents information about historic and modern infectious disease outbreaks, combining a Django backend with a responsive front-end. Each outbreak can have related reports, making the site extensible and data-driven.
+
+## Features
+- Django models for **Outbreaks** and related **Reports**
+- Views and templates to display outbreak lists and detail pages
+- Static files (CSS, images, JS) organized for maintainability
+- Responsive layout with semantic HTML and clean styling
+- Admin integration for easy content management
+- Scalable app structure for future expansion (additional apps, new models)
+
+## Project Structure
+viral-times/
+├─ manage.py
+├─ requirements.txt
+├─ README.md
+├─ viraltimes/ # Django project settings
+│ ├─ settings.py
+│ ├─ urls.py
+│ ├─ wsgi.py
+│ └─ asgi.py
+├─ outbreaks/ # main app
+│ ├─ admin.py
+│ ├─ apps.py
+│ ├─ models.py # outbreak + report models
+│ ├─ views.py # logic for list/detail pages
+│ ├─ tests.py
+│ ├─ templates/ # HTML templates
+│ └─ static/ # CSS, images, JS
+└─ static/ # shared static files
+
+
+## Quick Start
+Clone the repo and run the Django server locally:
+
+```bash
+git clone 
+cd web-portfolio/viral-times
+
+# create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate   # Windows: venv\Scripts\activate
+
+# install dependencies
+pip install -r requirements.txt
+
+# run the server
+python manage.py runserver
+
