@@ -1,0 +1,10 @@
+# Templates
+
+This folder contains the HTML templates used by the Viral Times project.  
+Templates are organized by app for clarity.
+
+## Outbreaks Templates
+- **new_outbreak.html** – Form for creating a new outbreak entry
+- **outbreak_detail.html** – Detailed view of a single outbreak
+- **outbreak_list.html** – List view showing all outbreaks
+- **welcome.html** – Landing page for the site
