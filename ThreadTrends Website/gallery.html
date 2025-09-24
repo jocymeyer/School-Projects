@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<!--
+	Name: Group Project
+	File Name: Gallery.html
+	Date: 03/5/2025
+-->
+
+<html lang="en">
+
+<head>
+	<title>Fashion That Moves With You: Gallery</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- fixed viewpoint to viewport -->
+	<link href="https://fonts.googleapis.com/css2?family=Emblema+One|Lora&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+		
+<body>		
+	<header>
+	
+	<div class="tab-desk">
+			<img src="images/header-chevron.jpg" alt="Header Chevron" class="header-image">
+		</div>
+		<div class="mobile">
+			<img src="images/header-chevron.jpg" alt="Header Chevron" class="header-image">
+		</div>
+		<!-- Mobile Navigation (Hamburger Menu) -->
+            	<nav class="mobile-nav">
+                <div id="menu-toggle" class="nav-icon" onclick="hamburger()">
+                    &#9776;
+                </div>
+                <ul id="mobile-nav" class="mobile-nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="community.html">Community Hub</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>		
+	</header>
+	
+	<nav class="desk">
+		<ul>
+			<li><a href="home.html"> Home </a></li>
+			<li><a href="about.html">About us </a></li>
+			<li><a href="community.html">Community Hub </a></li>
+			<li><a href="gallery.html">Gallery </a></li>
+			<li><a href="faqs.html">FAQs </a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	
+	<div class="mobile">
+		<h1>Gallery</h1>  <!-- Title in gray on Mobile viewport-->
+	</div>
+
+	<div id="wrapper">
+		<main>
+			<div class="tab-desk">
+				<h1>Gallery</h1>  <!-- Title in blue box for Tab-Desktop viewport-->
+			</div>	
+			<div class="text-wrapper">
+				<div class="tab-desk"> <!-- Text area for Tablet-Desktop Viewports -->
+					<h2><strong>ThreadTrend: Fashion That Moves With You</strong></h2>
+					<p>Welcome to Fashion That Moves With You. We believe fashion is more than what you wear, it's a 
+					reflection of who you are. Our online platform offers a dynamic blend of trendy, customizable apparel
+					and sustainable practices. Ensuring that every piece you wear tells a story of individuality and 
+					responsibility. Explore a diverse collection of high-quality clothing designed to suit your unique 
+					style, with customization options that let you personalize. Whether you're looking for everyday 
+					essentials or statement pieces we bring you fashion that fits your life seamlessly. </p>
+				</div>
+				
+				<div class="mobile"> <!-- Text area for Mobile Viewports -->
+					<h2><strong>ThreadTrend: Fashion That Moves With You</strong></h2>
+					<p>Style should be effortless, personal, and sustainable. At ThreadTrend, we make fashion work for you—with 
+					customizable designs, eco-friendly choices, and a seamless shopping experience. Explore the latest trends, 
+					discover new styles, and create a wardrobe that truly reflects you!</p>
+				</div>
+			</div>
+		</main>
+
+	</div>
+	
+	<footer> 
+		<p>&copy; Copyright 2021. All Rights Reserved.</p>
+		<p><a href="mailto:contact@Fashion.net">contact@Fashion.net</a></p>
+	</footer>
+	<script src="scripts/script.js"></script>
+</body>
+</html>
