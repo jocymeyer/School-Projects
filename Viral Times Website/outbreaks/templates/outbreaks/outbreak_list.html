@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Outbreaks</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>🦠 Outbreaks</h1>
+
+    <p>There are currently <strong>{{ num_outbreaks }}</strong> outbreaks in the database.</p>
+
+    <ul>
+        {% for outbreak in outbreaks %}
+            <li><a href="{% url 'outbreak_detail' outbreak.name %}">{{ outbreak.name }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <ul>
+        <h1>Navigation</h1>
+        <li><a href="{% url 'welcome' %}">⬅️ Return to Home Page</a></li>
+        <h1>Outbreaks</h1>
+        <li><a href="{% url 'outbreaks' %}">🦠 Browse Outbreaks</a></li>
+        <li><a href="{% url 'new_outbreak' %}">➕ Add New Outbreak</a></li>
+        <h1>Reports</h1>
+        <li><a href="{% url 'report_list' %}">📄 View Reports</a></li>
+        <li><a href="{% url 'new_report' %}">➕ Add New Report</a></li>
+    </ul>
+</body>
+</html>

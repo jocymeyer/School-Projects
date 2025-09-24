@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Viral Times</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Welcome to <em>Viral Times</em></h1>
+
+     <div style="text-align: center;">
+        <img src="{% static 'images/earth.jpg' %}" alt="Earth representing global health" style="max-width: 75%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
+    </div>
+
+    <p class="intro">
+        Explore our growing database of historical and modern outbreaks that have shaped global public health.
+        Whether you're here for research, curiosity, or personal interest, this site provides key facts and
+        curated reports about past and present disease events.
+    </p>
+
+    <div class="section-title">Get Started</div>
+    <ul>
+        <li><a href="{% url 'outbreaks' %}">🦠 Browse Outbreaks</a></li>
+        <li><a href="{% url 'report_list' %}">📄 View Reports</a></li>
+    </ul>
+
+    <div class="section-title">Add New Information</div>
+    <ul>
+        <li><a href="{% url 'new_outbreak' %}">➕ Add New Outbreak</a></li>
+        <li><a href="{% url 'new_report' %}">➕ Add New Report</a></li>
+    </ul>
+
+</body>
+</html>

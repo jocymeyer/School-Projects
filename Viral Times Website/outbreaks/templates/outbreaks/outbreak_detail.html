@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>{{ outbreak_name }}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>🧬 {{ outbreak_name }}</h1>
+
+    <div style="text-align: center;">
+        <img src="{% static 'images/' %}{{ outbreak.file_name }}.jpg" alt="{{ outbreak.name }}" style="max-width: 100%; border-radius: 8px;">
+    </div>
+
+    <ul>
+        <li><strong>Disease:</strong> {{ disease }}</li>
+        <li><strong>Date Range:</strong> {{ date_range }}</li>
+        <li><strong>Death Toll (Low):</strong> {{ death_low }}</li>
+        <li><strong>Death Toll (High):</strong> {{ death_high }}</li>
+        <li><strong>Transmission Type:</strong> {{ transmission }}</li>
+        <li><strong>Regions Affected:</strong> {{ regions }}</li>
+        <li><strong>Symptoms:</strong> {{ symptoms }}</li>
+        <li><strong>Impact:</strong> {{ impact }}</li>
+    </ul>
+
+    <ul>
+        <h1>Navigation</h1>
+        <li><a href="{% url 'welcome' %}">⬅️ Return to Home Page</a></li>
+        <h1>Outbreaks</h1>
+        <li><a href="{% url 'outbreaks' %}">🦠 Browse Outbreaks</a></li>
+        <li><a href="{% url 'new_outbreak' %}">➕ Add New Outbreak</a></li>
+        <h1>Reports</h1>
+        <li><a href="{% url 'report_list' %}">📄 View Reports</a></li>
+        <li><a href="{% url 'new_report' %}">➕ Add New Report</a></li>
+    </ul>
+</body>
+</html>
