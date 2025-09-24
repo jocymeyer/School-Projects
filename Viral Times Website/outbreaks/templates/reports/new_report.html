@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Create New Report</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Create a New Report</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        <table>
+            {{ form.as_table }}
+        </table>
+        <button type="submit">Submit</button>
+    </form>
+
+    <ul>
+        <h1>Navigation</h1>
+        <li><a href="{% url 'welcome' %}">⬅️ Return to Home Page</a></li>
+        <h1>Outbreaks</h1>
+        <li><a href="{% url 'outbreaks' %}">🦠 Browse Outbreaks</a></li>
+        <li><a href="{% url 'new_outbreak' %}">➕ Add New Outbreak</a></li>
+        <h1>Reports</h1>
+        <li><a href="{% url 'report_list' %}">📄 View Reports</a></li>
+        <li><a href="{% url 'new_report' %}">➕ Add New Report</a></li>
+    </ul>
+</body>
+</html>
