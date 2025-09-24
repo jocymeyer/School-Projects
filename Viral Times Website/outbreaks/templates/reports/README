@@ -1,0 +1,9 @@
+# Templates
+
+This folder contains the HTML templates used by the Viral Times project.  
+Templates are organized by app for clarity.
+
+## Reports Templates
+- **new_report.html** – Form for creating a new report entry
+- **report_detail.html** – Detailed view of a single report
+- **report_list.html** – List view showing all reports
