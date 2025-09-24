@@ -1,0 +1,17 @@
+# Outbreaks App
+
+This is the **main Django app** for the Viral Times project.  
+It contains the models, views, templates, and static files that power the site’s educational content on historic and modern infectious disease outbreaks.
+
+## Contents
+- **models.py** – Data models for outbreaks and related reports
+- **views.py** – Logic for outbreak list and detail pages
+- **templates/** – HTML templates for rendering outbreak pages
+- **static/** – App-specific static files (CSS, JS, images)
+- **admin.py** – Admin integration for managing outbreak and report data
+- **migrations/** – Database schema changes tracked by Django
+- **tests.py** – Unit tests for this app
+- **apps.py** – App configuration for Django
+- **__pycache__/** – Auto-generated files (ignored in Git)
+
+This app ties together the data, logic, and front-end presentation for the Viral Times website.
