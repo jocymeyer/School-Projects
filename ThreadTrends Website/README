@@ -1,0 +1,27 @@
+# ThreadTrend
+
+Role: Designer & Developer  
+Stack: HTML5, CSS3, JavaScript  
+Date: Date: 03/5/2025
+
+ThreadTrend is a multi-page website I fully designed and implemented as a long-form capstone project for responsive web design.  
+The site showcases modern layout techniques, accessibility practices, and interactive features.
+
+## Features
+- Multi-page design (`Home`, `About`, `Community Hub`, `Gallery`, `FAQs`, `Contact`, plus template/archive pages)
+- Responsive layout (mobile-first with CSS Flexbox & Grid)
+- Accessible navigation (desktop menu + mobile hamburger)
+- Dynamic elements:
+  - FAQ interactivity powered by JavaScript
+  - Community Hub with embedded trending fashion articles
+- Consistent branding with custom CSS and typography
+
+## Project Structure
+threadtrends/
+├─ *.html # Main site pages
+├─ css/ # Stylesheets
+├─ scripts/ # JavaScript (FAQ logic, hamburger menu)
+└─ images/ # Assets
+
+## Quick Start
+Clone the repo and open `home.html` in your browser.
